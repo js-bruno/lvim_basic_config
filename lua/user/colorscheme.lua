@@ -1,8 +1,11 @@
 local themes = {
   sonokai = "sonokai",
-  everforest = "everforest"
+  everforest = "everforest",
+  catppuccin = "catppuccin",
+  rose_pine_moon = "rose-pine-moon",
+  darkplus = "darkplus"
 }
 
 
-lvim.transparent_window = true
-lvim.colorscheme = themes.everforest
+lvim.transparent_window = false
+lvim.colorscheme = themes.darkplus

@@ -6,5 +6,7 @@
 require 'user.colorscheme'
 require 'user.plugins'
 require 'user.alpha'
+require 'user.python'
 require 'user.keymaps'
-
+require 'user.options'
+require 'user.neorg'

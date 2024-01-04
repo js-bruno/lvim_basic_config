@@ -1,16 +1,24 @@
 local kind = require('user.kind')
 
 lvim.leader = "space"
+lvim.leader = "space"
 
 lvim.keys.normal_mode["<Tab>"] = ":BufferLineCycleNext<CR>"
 lvim.keys.normal_mode["<S-Tab>"] = ":BufferLineCyclePrev<CR>"
 
 lvim.keys.normal_mode["<C-s>"] = ":w<cr>"
+lvim.keys.normal_mode["<C-s>"] = ":w<cr>"
 lvim.keys.normal_mode["<S-l>"] = ":BufferLineCycleNext<CR>"
 lvim.keys.normal_mode["<S-h>"] = ":BufferLineCyclePrev<CR>"
 lvim.keys.normal_mode["[d"] =  "<cmd>lua vim.diagnostic.goto_prev({ border = 'rounded' })<CR>"
 
-vim.keymap.set('n', 'gn', ":tabe %<CR>")
+lvim.keys.normal_mode["<C-d>"] = "<C-d>zz"
+lvim.keys.normal_mode["<C-u>"] = "<C-u>zz"
+lvim.keys.normal_mode["n"]  = "nzzzv"
+lvim.keys.normal_mode["N"]  = "nzzzv"
+
+lvim.keys.visual_mode["K"] = ":m '<-2<CR>gv=gv"
+lvim.keys.visual_mode["J"] =  ":m '>+1<CR>gv=gv"
 
 lvim.lsp.buffer_mappings.normal_mode["gr"] = {
   ":lua require'telescope.builtin'.lsp_references()<cr>",
